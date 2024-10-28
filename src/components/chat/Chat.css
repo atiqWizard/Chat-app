@@ -1,0 +1,28 @@
+.message-bubble {
+    position: relative;
+  }
+  
+  .message-bubble.user::before,
+  .message-bubble.bot::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: inherit;
+    border-radius: 50%;
+  }
+  
+  .message-bubble.user::before {
+    top: -5px;
+    right: -15px;
+    transform: rotate(45deg);
+    background-color: #4B5563; /* Color matching user's bubble */
+  }
+  
+  .message-bubble.bot::before {
+    top: -5px;
+    left: -15px;
+    transform: rotate(45deg);
+    background-color: #D1D5DB; /* Color matching bot's bubble */
+  }
+  
